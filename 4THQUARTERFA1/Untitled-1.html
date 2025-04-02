@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FA1</title>
+    <link rel="stylesheet" href="FA1.css">
+</head>
+<body>
+    <h1>Participate in Bantay Bata 163!</h1>
+    <div class="yap">
+    <h2>Why Sign Up?</h2>
+    <p>Ever since 1997, Bantay Bata 163 has provided services to child protection and family growing. 
+    They don't only provide for protection from physical harm however, they also provide services to to
+    cater children's mental health and emotional wellbeing. Bantay Bata has helped more than a million
+    families in the span of 27 years.
+    </p>
+    </div>
+    <form name="signupForm" onsubmit="return validateForm()">
+        <label for="firstName">First Name (required):</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="lastName">Last Name (required):</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label>Sex (required):</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="preferNotSay" name="sex" value="preferNotSay">
+            <label for="preferNotSay">Prefer not to say</label>
+        </div>
+        
+        <label for="email">Email Address (required):</label>
+        <input type="email" id="email" name="email" required>
+        <label for="contact">Contact Number (optional):</label>
+        <input type="text" id="contact" name="contact">
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+<script src="FA1.js"></script>
+</html>
